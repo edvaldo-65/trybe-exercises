@@ -7,9 +7,9 @@ class About extends Component {
         const jsxSkills = skills.map((skill,index) => <li key={index}>{skill}</li>)
         return (
             <div>
-                <h1>Edvaldo Alves do Nascimento</h1>
-                <p>Aluno da Trybe - turma 23 - Tribo A</p>
-                <h2>Minhas Habilidades</h2>
+                <h1>Terezinha Alves do Nascimento Fernandes</h1>
+                <p>Aluna de Corte e costura - turma 23 - Tribo A</p>
+                <h1>Mora atualmente em Surubim</h1>
                 <ul>{ jsxSkills }</ul>
             </div>);
 

@@ -2,19 +2,35 @@ import React, { Component } from 'react';
 import pokemons from '../data';
 import Pokemon from './Pokemon';
 
-const myPokemon = pokemons.map((pokemon) => {
-  const { id, name, type, averageWeight, image } = pokemon;
-  const { value, measurementUnit } = averageWeight;
-  return (
-    <>
-      <Pokemon id={id} name={name} type={type} measurementUnit={measurementUnit} image={image} value={value} />
-    </>
-  )
-})
 
 class Pokedex extends Component {
+
+  // constructor() {
+  //   super() 
+  //   // this.funcMap = this.funcMap.bind(this);
+  // }
+  
+  funcMap = (pokemon) => {
+    
+    const { id, name, type, averageWeight: {value, measurementUnit}, image } = pokemon;
+  
+    return (
+      <>
+        <Pokemon id={id} 
+        name={name} 
+        type={type} 
+        measurementUnit={measurementUnit} 
+        image={image} 
+        value={value} />
+      </>
+    )
+  };
+  
   render() {
-    return <main>{myPokemon}</main>
+    -
+    const myPokemons = pokemons.map(this.funcMap)
+    
+    return <main>{myPokemons}</main>
   }
 }
 
