@@ -24,7 +24,23 @@ const conteudos = [
   ];
 
 class Content extends React.Component {
-render() {
-return 
-};
-};
+
+  task2 = (param) => {
+  return <li>{param}</li>
+  }
+
+  searchParam = conteudos.map((param) => {
+  return this.task2(param.conteudo);
+  });
+
+  render() {
+    return (
+      <>
+      <h1>Conteúdo de Front-End -2</h1>
+      <ul>{this.searchParam}</ul>
+      </>
+    )
+  };
+}
+
+export default Content;
