@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Pokemon extends Component {
   render() {
@@ -9,6 +10,7 @@ class Pokemon extends Component {
   <p>{name}</p>
   <p>{type}</p>
   <p>Average weight: {value} {measurementUnit}</p>
+  <Link to={ `/pokemons/${id}` }>Mais detalhes</Link>
 </div>
         )
   }

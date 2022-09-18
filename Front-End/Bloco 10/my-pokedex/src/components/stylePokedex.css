@@ -1,3 +1,5 @@
+/* import { Link } from 'react-router-dom'; */
+
 .div-pokemon {
     text-align: center;
     border: 1px solid green;
@@ -6,7 +8,9 @@
     display: inline-block;
     align-content: center;
     align-items: center;
+    justify-content: center;
     margin: 30px;
+    padding: 10px;
 }
 
 main {
@@ -15,4 +19,72 @@ main {
 
 h1 {
     text-align: center;
+    color: green;
 }
+
+.navLink {
+    text-align: center;
+    color: green;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: white;
+    background-color: green;
+    text-decoration:double;
+}
+
+nav {
+    margin: 20px 0px;
+}
+
+div { 
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: green;
+    color: white;
+    margin: 10px;
+}
+
+button:hover {
+    padding: 10px 12px;
+    background-color: greenyellow;
+    color: green;
+}
+
+li {
+    list-style: none;
+}
+
+.ulMaps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.bannerPokemon {
+    width: 15%;
+}
+
+em {
+    text-decoration: wavy;
+}
+
+
+/* header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
